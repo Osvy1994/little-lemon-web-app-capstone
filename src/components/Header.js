@@ -1,7 +1,7 @@
-function Header() {
+function Header(props) {
   return (
     <div>
-      Header
+      {props.children}
     </div>
   )
 }
