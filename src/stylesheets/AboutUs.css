@@ -1,0 +1,116 @@
+.about-container {
+  background-color: #334194;
+  font-family: "Special Elite", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  
+}
+
+.about-image img {
+  width: 390px;
+}
+
+.about-info-container {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.about-info-container p, .follow-container p {
+  font-size: 1.5rem;
+  color: rgb(223, 223, 223);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.about-info-container h1 {
+  margin: 40px auto;
+  font-size: 4rem;
+  color: white;
+}
+
+.follow-container p {
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.follow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex: 0 0 100%;
+  margin-top: 50px;
+}
+
+.about-react-icon {
+  display: flex;
+  gap: 40px;
+}
+
+.about-react-icon a {
+  text-decoration: none;
+  color: azure;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.about-react-icon a:hover {
+  color: #fabf18;
+}
+
+.map-image-container img {
+  width: 500px;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.map-image-container img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 750px) {
+  .about-image {
+    margin: 50px 10px;
+  }
+
+  .about-container {
+    padding: 10px;
+  }
+
+  .follow-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .about-image img {
+    width: 280px;
+  }
+  #follow-container {
+    padding: 0 20px;
+  }
+
+  .about-info-container p, .follow-container p {
+    font-size: 1.4rem;
+  }
+
+  .about-react-icon {
+    display: flex;
+    gap: 40px;
+    margin-top: 0px;
+  }
+
+  .map-image-container img {
+    width: 300px;
+  }
+}

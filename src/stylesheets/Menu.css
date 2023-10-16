@@ -1,0 +1,63 @@
+.menu-page-container {
+  background: linear-gradient(
+    90deg,
+    rgba(51, 65, 148, 0.78) 0%,
+    rgba(51, 65, 148, 0.53) 100%
+  ), url("https://www.littlelemon.ie/wp-content/uploads/IMG_9609-1536x1060.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 160px;
+  padding-bottom: 150px;
+  font-family: "Special Elite", sans-serif;
+  min-height: 100vh;
+}
+
+.menu-page-container h1 {
+  color: white;
+  margin-top: 120px;
+  font-size: 150px;
+  font-weight: 600;
+}
+
+.menu-page-container button {
+  font-family: "Special Elite", sans-serif;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #334194;
+  border: 2.5px solid white;
+  color: white;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.menu-page-container button:hover {
+  cursor: pointer;
+  background-color: rgb(100, 168, 220);
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  .menu-page-container {
+    gap: 80px;
+    min-height: auto;
+  }
+
+  .menu-page-container h1 {
+    font-size: 70px;
+  }
+
+  .menu-page-container button {
+    width: 300px;
+    font-size: 25px;
+  }
+}

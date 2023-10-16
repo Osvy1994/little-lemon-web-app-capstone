@@ -100,7 +100,7 @@ function BookingForm(props) {
         onClick={handleFormSubmit}
         id="submit-button"
         type="submit"
-        value="Make Your reservation"
+        value="Reserve Table"
       />
     </form>
   );
