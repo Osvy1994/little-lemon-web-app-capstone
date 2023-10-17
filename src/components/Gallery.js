@@ -2,8 +2,8 @@ import "../stylesheets/Gallery.css";
 
 function Gallery() {
   return (
-    <div className="main-menu-container">
-      <div id="gallery-section" className="menu-container">
+    <div id="gallery-section" className="main-menu-container">
+      <div className="menu-container">
         <h1>LITTLE BITES, BIG FLAVOURS</h1>
         <div className="info-container">
           <p id="menu-info1">

@@ -21,6 +21,15 @@ p {
   
 }
 
+.api-data p {
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.api-data p:last-child {
+  margin-bottom: 40px;
+}
+
 a {
   text-decoration: none;
   color: rgb(36, 32, 117);

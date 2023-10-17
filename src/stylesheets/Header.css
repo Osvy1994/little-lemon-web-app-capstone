@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.724);
   font-size: 1.2rem;
   font-family: "Special Elite", sans-serif;
   position: fixed;

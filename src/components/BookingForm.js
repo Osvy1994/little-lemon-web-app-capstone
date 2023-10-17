@@ -20,10 +20,11 @@ function BookingForm(props) {
   //Function declarations
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log("function called")
+    console.log("function called");
     const newBookingInfo = {
       date: selectedDate,
-      time: selectedTime
+      time: selectedTime,
+      guests: numGuests,
     };
     props.updateBookingInfo(newBookingInfo);
   };
@@ -33,8 +34,8 @@ function BookingForm(props) {
   };
 
   const handleTimeChange = (e) => {
-    setSelectedTime(e.target.value)
-  }
+    setSelectedTime(e.target.value);
+  };
 
   //Function to convert ISO format date to string
   const dateToString = (dateISO) => {
@@ -60,11 +61,7 @@ function BookingForm(props) {
         onChange={handleDateChange}
       />
       <label for="res-time">Choose time:</label>
-      <select
-        id="res-time"
-        value={selectedTime}
-        onChange={handleTimeChange}
-      >
+      <select id="res-time" value={selectedTime} onChange={handleTimeChange}>
         <option>5:00 PM</option>
         <option>5:30 PM</option>
         <option>6:00 PM</option>
@@ -75,7 +72,6 @@ function BookingForm(props) {
         <option>8:30 PM</option>
         <option>9:00 PM</option>
         <option>9:30 PM</option>
-        <option>10:00 PM</option>
       </select>
       <label for="guests">Number of guests:</label>
       <input
